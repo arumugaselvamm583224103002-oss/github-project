@@ -1,0 +1,17 @@
+int main() {
+    int num, i;
+    printf("Enter a decimal number: ");
+    scanf("%d", &num);
+
+    printf("Binary equivalent: ");
+
+    for(i = 31; i >= 0; i--) {
+        int k = num >> i;
+        if(k & 1)
+            printf("1");
+        else
+            printf("0");
+    }
+
+    return 0;
+}
